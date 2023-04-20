@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* navbar Statr */
+nav {
+    display: flex;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid red;
+    font-family: 'Chivo Mono', monospace;
+}
+
+.img {
+    position: absolute;
+    left: 0;
+    padding: 20px;
+    float: left;
+    margin-left: 10px;
+}
+/* navbar End */ 
+
+/* Details Of Student */
+.details {
+    display: flex;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid red;
+}
+h4{
+    font-family: 'Chivo Mono', monospace;
+
+}
+.name input[type="text"] {
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    font-size: 16px;
+}
+
+.name label {
+    /* margin-left: 600px; */
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Drop Down Menu */
+.DropDown {
+    display: flex;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+select {
+    padding: 8px;
+    border: 1px solid #eb1717;
+    border-radius: 4px;
+    height: 40px;
+    margin-left: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#faculty-list {
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+    padding: 80px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: none;
+}
+
+/* Question Box */
+.qu1,
+.qu2,
+.qu3,
+.qu4,
+.qu5 {
+    border: 1px solid black;
+    padding: 10px;
+    width: 800px;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.qu1:hover {
+    box-shadow: 5px 8px 10px red;
+}
+
+.qu2:hover {
+    box-shadow: 5px 8px 10px red;
+}
+
+.qu3:hover {
+    box-shadow: 5px 8px 10px red;
+}
+
+.qu4:hover {
+    box-shadow: 5px 8px 10px red;
+}
+
+.qu5:hover {
+    box-shadow: 5px 8px 10px red;
+}
+
+.qu1,
+.qu2,
+.qu3,
+.qu4,
+.qu5 p {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 5px;
+}
+
+.question {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.answer-options {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+input[type="radio"] {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked {
+    border-color: #f00;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+input[type="radio"]:checked+label {
+    color: red;
+    font-weight: bold;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+.submit button{
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 19px;
+    color : azure;
+    background-color: green;
+    border: 1px solid white;
+
+}
+ 
+@media (max-width:320px) {
+    select {
+        padding: 8px;
+        border: 1px solid #177eeb;
+        border-radius: 4px;
+        height: 40px;
+        margin-left: 5px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    nav {
+        padding: 0px;
+        height: 100px;
+        box-sizing: border-box;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid red;
+        font-family: 'Chivo Mono', monospace;
+    }
+
+    .img {
+        padding: 0;
+    }
+
+    img {
+        left: 0;
+        height: 50px;
+        width: 50px;
+        float: left;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-left: 80px;
+    }
+
+    .DropDown {
+        display: flex;
+        padding: 0px;
+        margin-top: 30px;
+        box-sizing: border-box;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    .questions {
+        padding: 0px;
+        margin-left: 20px;
+        
+    }
+
+}
