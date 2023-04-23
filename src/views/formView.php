@@ -18,7 +18,7 @@
 
 <body> 
     <div class="frm">
-        <form class="questions">
+        <div class="questions">
             <div class="qu1">
                 <p class="question">What is your favorite color?</p>
                 <div class="answer-options">
@@ -119,7 +119,7 @@
                     </label>
                 </div>
             </div>
-        </form>
+        </div>
     </div>
     <div class="submit">
         <button>Submit</button>
