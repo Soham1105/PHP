@@ -17,7 +17,7 @@
 </head>
 
 <body> 
-    <div class="frm">
+    <form class="frm" action="post">
         <div class="questions">
             <div class="qu1">
                 <p class="question">What is your favorite color?</p>
@@ -120,10 +120,11 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="submit">
-        <button>Submit</button>
-    </div>
+				<div class="submit">
+				<!-- Todo: Warning  -->
+				<input type="submit" value="Submit" onclick="foo()">
+				</div>
+    </form>
     <script src="../../public/js/app.js"></script>
 </body>
 </html>
