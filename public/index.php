@@ -5,155 +5,159 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
+    <div class="img">
+        <a href="http://www.rcti.cteguj.in/" target="_blank">
+            <img src="/assets/images/logo.png" alt="Logo" height="100px" width="100px">
+        </a>
+    </div>
     <nav>
-        <div class="img">
-            <a href="http://www.rcti.cteguj.in/" target="_blank">
-                <img src="Assests/RCTI_Logo.png" alt="Logo" height="100px" width="100px">
-            </a>
+        <div class="heading">
+            <h2><b>Faculty FeedBack Form</b></h2>
         </div>
-        <h2><b>Faculty FeedBack Form</b></h2>
     </nav>
     <div class="DropDown">
-        <select id="semester-select">
-            <option value="none">Select Semester</option>
-            <option value="semester2">Sem 2</option>
-            <option value="semester4">Sem 4</option>
-            <option value="semester6">Sem 6</option>
-        </select>
-        <select id="faculty-select">
-            <option value="none">Select Faculty</option>
-        </select>
-        <div id="faculty-list">
-            <ul>
-                <li class="semester2 facultyC">Faculty A</li>
-                <li class="semester2 facultyC">Faculty A</li>
-                <li class="semester2 facultyC">Faculty A</li>
-                <li class="semester4 facultyC">Faculty B</li>
-                <li class="semester4 facultyC">Faculty B</li>
-                <li class="semester4 facultyC">Faculty B</li>
-                <li class="semester6 facultyC">Faculty C</li>
-                <li class="semester6 facultyC">Faculty C</li>
-                <li class="semester6 facultyC">Faculty C</li>
-            </ul>
-        </div>
-    </div>
-    <div class="questions">
-        <div class="qu1">
-            <p class="question">What is your favorite color?</p>
-            <div class="answer-options">
-                <label>
-                    <input type="radio" name="feedback" value="very-good" id="very-good">
-                    Very Good
-                </label>
-                <label>
-                    <input type="radio" name="feedback" value="good" id="good">
-                    Good
-                </label>
-                <label>
-                    <input type="radio" name="feedback" value="ok" id="ok">
-                    OK
-                </label>
-                <label>
-                    <input type="radio" name="feedback" value="bad" id="bad">
-                    Bad
-                </label>
-                <label>
-                    <input type="radio" name="feedback" value="very-bad" id="very-bad">
-                    Very Bad
-                </label>
+        <div class="selection">
+            <div class="selec">
+                <select id="semester" onchange="updateClassList()">
+                    <option value="">Select a semester</option>
+                    <option value="sem2">Semester 2</option>
+                    <option value="sem4">Semester 4</option>
+                    <option value="sem6">Semester 6</option>
+                </select>
+                <select id="class" onchange="updateSubjectList()">
+                    <option value="">Select a class</option>
+                </select>
             </div>
-        </div>
-        <div class="qu2">
-            <p class="question">What is your favorite color?</p>
-            <div class="answer-options">
-                <label>
-                    <input type="radio" name="feedback" value="very-good" id="very-good">
-                    Very Good
-                </label>
-                <label>
-                    <input type="radio" name="feedback" value="good" id="good">
-                    Good
-                </label>
-                <label>
-                    <input type="radio" name="feedback" value="ok" id="ok">
-                    OK
-                </label>
-                <label>
-                    <input type="radio" name="feedback" value="bad" id="bad">
-                    Bad
-                </label>
-                <label>
-                    <input type="radio" name="feedback" value="very-bad" id="very-bad">
-                    Very Bad
-                </label>
-            </div>
-        </div>
-        <div class="qu3">
-            <p class="question">What is your favorite color?</p>
-            <div class="answer-options">
-                <label>
-                    <input type="radio" name="feedback" value="very-good" id="very-good">
-                    Very Good
-                </label>
-                <label>
-                    <input type="radio" name="feedback" value="good" id="good">
-                    Good
-                </label>
-                <label>
-                    <input type="radio" name="feedback" value="ok" id="ok">
-                    OK
-                </label>
-                <label>
-                    <input type="radio" name="feedback" value="bad" id="bad">
-                    Bad
-                </label>
-                <label>
-                    <input type="radio" name="feedback" value="very-bad" id="very-bad">
-                    Very Bad
-                </label>
-            </div>
-        </div>
-        <div class="qu4">
-            <p class="question">What is your favorite color?</p>
-            <div class="answer-options">
-                <label>
-                    <input type="radio" name="feedback" value="very-good" id="very-good">
-                    Very Good
-                </label>
-                <label>
-                    <input type="radio" name="feedback" value="good" id="good">
-                    Good
-                </label>
-                <label>
-                    <input type="radio" name="feedback" value="ok" id="ok">
-                    OK
-                </label>
-                <label>
-                    <input type="radio" name="feedback" value="bad" id="bad">
-                    Bad
-                </label>
-                <label>
-                    <input type="radio" name="feedback" value="very-bad" id="very-bad">
-                    Very Bad
-                </label>
+            <div class="selec1">
+                <select id="subject" onchange="updateFacultyList()">
+                    <option value="">Select a Lab</option>
+                </select>
+                <select id="faculty">
+                    <option value="">Select a faculty</option>
+                </select>
             </div>
         </div>
     </div>
+    <div class="frm">
+        <div class="questions">
+            <div class="qu1">
+                <p class="question">What is your favorite color?</p>
+                <div class="answer-options">
+                    <label>
+                        <input type="radio" name="feedback" value="very-good" id="very-good">
+                        Very Good
+                    </label>
+                    <label>
+                        <input type="radio" name="feedback" value="good" id="good">
+                        Good
+                    </label>
+                    <label>
+                        <input type="radio" name="feedback" value="ok" id="ok">
+                        OK
+                    </label>
+                    <label>
+                        <input type="radio" name="feedback" value="bad" id="bad">
+                        Bad
+                    </label>
+                    <label>
+                        <input type="radio" name="feedback" value="very-bad" id="very-bad">
+                        Very Bad
+                    </label>
+                </div>
+            </div>
+            <div class="qu2">
+                <p class="question">What is your favorite color?</p>
+                <div class="answer-options">
+                    <label>
+                        <input type="radio" name="feedback" value="very-good" id="very-good">
+                        Very Good
+                    </label>
+                    <label>
+                        <input type="radio" name="feedback" value="good" id="good">
+                        Good
+                    </label>
+                    <label>
+                        <input type="radio" name="feedback" value="ok" id="ok">
+                        OK
+                    </label>
+                    <label>
+                        <input type="radio" name="feedback" value="bad" id="bad">
+                        Bad
+                    </label>
+                    <label>
+                        <input type="radio" name="feedback" value="very-bad" id="very-bad">
+                        Very Bad
+                    </label>
+                </div>
+            </div>
+            <div class="qu3">
+                <p class="question">What is your favorite color?</p>
+                <div class="answer-options">
+                    <label>
+                        <input type="radio" name="feedback" value="very-good" id="very-good">
+                        Very Good
+                    </label>
+                    <label>
+                        <input type="radio" name="feedback" value="good" id="good">
+                        Good
+                    </label>
+                    <label>
+                        <input type="radio" name="feedback" value="ok" id="ok">
+                        OK
+                    </label>
+                    <label>
+                        <input type="radio" name="feedback" value="bad" id="bad">
+                        Bad
+                    </label>
+                    <label>
+                        <input type="radio" name="feedback" value="very-bad" id="very-bad">
+                        Very Bad
+                    </label>
+                </div>
+            </div>
+            <div class="qu4">
+                <p class="question">What is your favorite color?</p>
+                <div class="answer-options">
+                    <label>
+                        <input type="radio" name="feedback" value="very-good" id="very-good">
+                        Very Good
+                    </label>
+                    <label>
+                        <input type="radio" name="feedback" value="good" id="good">
+                        Good
+                    </label>
+                    <label>
+                        <input type="radio" name="feedback" value="ok" id="ok">
+                        OK
+                    </label>
+                    <label>
+                        <input type="radio" name="feedback" value="bad" id="bad">
+                        Bad
+                    </label>
+                    <label>
+                        <input type="radio" name="feedback" value="very-bad" id="very-bad">
+                        Very Bad
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <div class="submit">
-
         <button>Submit</button>
     </div>
-    <script src="app.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 
 </html>
