@@ -5,20 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="/assets/images/logo.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
 
-<body>
+<body> 
     <div class="img">
         <a href="http://www.rcti.cteguj.in/" target="_blank">
-            <img src="/assets/images/logo.png" alt="Logo" height="100px" width="100px">
+            <img src="/assets/images/logo.jpg" alt="Logo" height="100px" width="100px">
         </a>
     </div>
     <nav>
@@ -153,11 +154,9 @@
             </div>
         </div>
     </div>
-    
     <div class="submit">
         <button>Submit</button>
     </div>
     <script src="/js/app.js"></script>
 </body>
-
 </html>
