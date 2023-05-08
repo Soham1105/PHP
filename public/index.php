@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
-
+<form>
 <body> 
     <div class="img">
         <a href="http://www.rcti.cteguj.in/" target="_blank">
@@ -27,6 +27,7 @@
             <h2><b>Faculty FeedBack Form</b></h2>
         </div>
     </nav>
+		
     <div class="DropDown">
         <div class="selection">
             <div class="selec">
@@ -157,6 +158,7 @@
     <div class="submit">
         <button>Submit</button>
     </div>
+    </form>
     <script src="/js/app.js"></script>
 </body>
 </html>
