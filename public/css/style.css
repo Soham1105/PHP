@@ -2,6 +2,10 @@
     font-family: 'Lato', sans-serif;
 }
 
+body {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -15,11 +19,19 @@ nav {
 .img {
     float: left;
     left: 0;
+    background-color: white;
+    border-radius: 15px;
 }
 
-.heading h2 {
-    font-family: 'Ysabeau', sans-serif;
+.heading p {
+    font-family: 'Roboto', sans-serif;
     margin-right: 100px;
+    color: rgb(11, 10, 10);
+    font-weight: bolder;
+    font-size: 35px;
+    color: white;
+    margin-bottom: 0;
+    font-weight: bold;
 }
 
 .DropDown {
@@ -28,14 +40,16 @@ nav {
     justify-content: center;
     margin-right: 60px;
 }
-.selection{
+
+.selection {
     display: flex;
 
 }
+
 .selection select {
     padding: 10px;
-    color: bisque;
-    background-color: rgb(0, 0, 0);
+    color: white;
+    background-color: #232424;
     font-size: 13px;
     font-weight: bold;
     margin-left: 50px;
@@ -47,19 +61,43 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .qu1,
 .qu2,
 .qu3,
-.qu4 {
-    border: 1px solid black;
-    padding: 10px;
+.qu4,
+.qu5,
+.qu6,
+.qu7,
+.qu8,
+.qu9,
+.qu10,
+.qu11,
+.qu12 {
+    border: none;
+    padding: 20px;
     margin-top: 20px;
-    width: 400px;
+    width: 600px;
     border-radius: 15px;
-    background-color: rgb(206, 186, 186);
+    background-color: whitesmoke;
     font-weight: bold;
+    color: #05386B;
+    font-family: 'Roboto', sans-serif;
+}
+
+#comments {
+    font-family: 'Lato', sans-serif;
+    margin-top: 20px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 16px;
+    width: 600px;
+    height: 100px;
 }
 
 .answer-options {
@@ -74,11 +112,13 @@ label {
     font-size: 16px;
     line-height: 20px;
 }
+
 .submit {
     display: flex;
     justify-content: center;
 }
-.submit button{
+
+.submit button {
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -98,14 +138,22 @@ label {
 }
 
 @media (max-width:320px) {
-    html{
+    html {
         overflow: scroll;
     }
-    body{
+
+    body {
         font-family: 'Lato', sans-serif;
         margin: 0;
         padding: 0;
-        /* width: 300px; */
+        background-image: linear-gradient(to right top, #73eb88, #49e3a5, #28d9ba, #2ecec8, #4dc1cc);
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+
+    .frm {
+        display: flex;
+        flex-direction: row;
     }
 
     nav {
@@ -115,18 +163,27 @@ label {
     }
 
     .heading {
-        margin-top: 10px;
+        /* margin-top: 10px; */
+        display: flex;
+        justify-content: center;
+
     }
 
     .img {
         float: left;
         left: 0;
+        margin-top: 10px;
     }
 
-    .heading h2 {
-        font-family: 'Ysabeau', sans-serif;
-        margin-left: 10px;
+    .heading p {
+        font-family: 'Roboto', sans-serif;
+        margin-left: 15px;
+        font-weight: bolder;
+        margin-top: 0px;
+        margin-bottom: 0px;
         margin-right: 0px;
+        color: white;
+        font-size: 35px;
     }
 
     .DropDown {
@@ -137,14 +194,16 @@ label {
         margin-right: 25px;
     }
 
-    .selection{
+    .selection {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-left: 0px;
     }
+    
     .selection select {
+        margin-bottom: 10px;
         padding: 10px;
         color: bisque;
         background-color: rgb(0, 0, 0);
@@ -158,13 +217,20 @@ label {
     .qu1,
     .qu2,
     .qu3,
-    .qu4 {
+    .qu4,
+    .qu5,
+    .qu6,
+    .qu7,
+    .qu8,
+    .qu9,
+    .qu10,
+    .qu11,
+    .qu12 {
         border: 1px solid black;
         padding: 10px;
         margin-top: 20px;
         width: 280px;
         border-radius: 15px;
-        background-color: rgb(206, 186, 186);
         font-weight: bold;
     }
 
@@ -181,16 +247,14 @@ label {
         line-height: 20px;
     }
 
-    .frm {
-        display: block;
-        justify-content: space-around;
-    }
+
+
     .submit {
         display: flex;
-        
         justify-content: center;
     }
-    .submit button{
+
+    .submit button {
         display: flex;
         justify-content: center;
         padding: 10px;
@@ -203,5 +267,16 @@ label {
         margin-bottom: 10px;
         border: none;
     }
-    
+    #comments {
+        font-family: 'Lato', sans-serif;
+        margin-top: 20px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 4px;
+        background-color: white;
+        font-size: 16px;
+        width: 250px;
+        height: 100px;
+    }
 }
